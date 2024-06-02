@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regina's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="assets/logo.jpg" />
+  </head>
+
+  <body>
+    <div class="main">
+      <!-- Side Bar -->
+      <div id="sidebar-layout">
+        <aside id="sidebar">
+          <div id="sidebar-btn-container" class="sidebar-btn-container">
+            <button
+              id="toggleButton"
+              class="button"
+              aria-label="Expand Sidebar"
+            >
+              <span>
+                <i data-lucide="chevron-last"></i>
+              </span>
+            </button>
+          </div>
+          <div id="sidebar-content">
+            <div
+              class="sidebar-item"
+              id="sidebar-overview"
+              onclick="scrollToDiv(4)"
+            >
+              <span class="icon">
+                <i data-lucide="layout-dashboard"></i>
+              </span>
+              <span class="sidebar-text">Overview</span>
+              <span class="hover-text">Overview</span>
+            </div>
+            <hr class="separator" />
+            <div
+              class="sidebar-item"
+              id="sidebar-services"
+              onclick="scrollToDiv(5)"
+            >
+              <span class="icon">
+                <i data-lucide="list-checks"></i>
+              </span>
+              <span class="sidebar-text">Services</span>
+              <span class="hover-text">Services</span>
+            </div>
+            <hr class="separator" />
+            <div
+              class="sidebar-item"
+              id="sidebar-benefits"
+              onclick="scrollToDiv(6)"
+            >
+              <span class="icon">
+                <i data-lucide="shield-check"></i>
+              </span>
+              <span class="sidebar-text">Benefits</span>
+              <span class="hover-text">Benefits</span>
+            </div>
+            <hr class="separator" />
+            <div
+              class="sidebar-item"
+              id="sidebar-github"
+              onclick="scrollToDiv(7)"
+            >
+              <span class="icon">
+                <i data-lucide="github"></i>
+              </span>
+              <span class="sidebar-text">Github</span>
+              <span class="hover-text">Github</span>
+            </div>
+            <hr class="separator" />
+            <div
+              class="sidebar-item"
+              id="sidebar-contact"
+              onclick="scrollToDiv(8)"
+            >
+              <span class="icon">
+                <i data-lucide="contact"></i>
+              </span>
+              <span class="sidebar-text">Contact</span>
+              <span class="hover-text">Contact</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <!-- End of Side Bar -->
+
+      <!-- Main Content -->
+      <div class="container" id="mainDiv">
+        <!-- Heading -->
+        <div class="header-container">
+          <div class="dim-overlay"></div>
+          <div class="header-content">
+            <h1 class="heading">Regina</h1>
+            <h1 class="heading">Chileshe</h1>
+          </div>
+          <div class="overview-section" id="overview">
+            <div class="overview-content">
+              <div class="overview-text">
+                <p>
+                  Dependable web and mobile app developer with a proven ability
+                  to translate ideas into fully functional software products.
+                  Known for transforming conceptual visions into tangible and
+                  effective solutions for a variety of platforms.
+                </p>
+              </div>
+              <div class="overview-links">
+                <a href="assets/CV.pdf" target="_blank" class="btn-header">
+                  <span class="header-text">Download CV</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div class="content-section bg-light">
+          <section id="skills">
+            <div class="skills-container">
+              <h1 class="skills-title">Services</h1>
+              <p class="skills-description">
+                Specializing in HTML, CSS, JavaScript, PHP, and Cisco
+                Networking, I leverage my expertise in these technologies to
+                provide a comprehensive range of services. From dynamic and
+                visually appealing web and mobile development to robust
+                server-side solutions with PHP, my skill set ensures a seamless
+                and efficient development process. Additionally, my proficiency
+                in Cisco Networking allows me to offer reliable and secure
+                network solutions.
+              </p>
+
+              <!-- Detailed Services -->
+              <div class="service-card" id="web-development">
+                <h2>1. Web Development</h2>
+                <div class="skill-details">
+                  <div class="skill-imgs">
+                    <img
+                      src="assets/web.png"
+                      alt="Web Development"
+                      class="service-image"
+                    />
+                  </div>
+                  <div class="skill-texts">
+                    <p class="service-text">
+                      Proficient in HTML, CSS, and JavaScript, I excel in
+                      crafting responsive and intuitive web applications. By
+                      integrating advanced frameworks like Laravel and React, I
+                      enhance projects to meet diverse needs, ensuring robust
+                      and dynamic outcomes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="service-card" id="mobile-development">
+                <h2>2. Mobile Development</h2>
+                <div class="skill-details" id="mobile-details">
+                  <div class="skill-imgs">
+                    <img
+                      src="assets/mobile.png"
+                      alt="Mobile Development"
+                      class="service-image"
+                    />
+                  </div>
+                  <div class="skill-texts">
+                    <p class="service-text">
+                      In mobile development, I utilize JavaScript to create
+                      responsive, user-centric applications. With a focus on
+                      seamless user experiences, I prioritize smooth navigation
+                      and optimized performance, ensuring high-quality solutions
+                      tailored to diverse user needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="service-card" id="networking">
+                <h2>3. Networking</h2>
+                <div class="skill-details">
+                  <div class="skill-imgs">
+                    <img
+                      src="assets/network.png"
+                      alt="Networking"
+                      class="service-image"
+                    />
+                  </div>
+                  <div class="skill-texts">
+                    <p class="service-text">
+                      As a certified CCNA professional, I excel in routing and
+                      switching, specializing in Cisco devices. With expertise
+                      in configuring, managing, and optimizing Cisco networking
+                      equipment, I ensure seamless data flow and efficient
+                      communication within diverse IT environments.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="service-card" id="it-support">
+                <h2>4. IT Support</h2>
+                <div class="skill-details" id="it-details">
+                  <div class="skill-imgs">
+                    <img
+                      src="assets/support.png"
+                      alt="IT Support"
+                      class="service-image"
+                    />
+                  </div>
+                  <div class="skill-texts">
+                    <p class="service-text">
+                      Delivering seamless technical assistance and proactive
+                      maintenance solutions encompassing software, network
+                      infrastructure, and computer hardware, ensuring
+                      uninterrupted operations and optimal performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Services -->
+
+          <!-- Technologies and Langueges-->
+          <section id="technologies">
+            <div class="title-container">
+              <h1 class="title">Languages and Technologies</h1>
+            </div>
+            <div class="technology-content">
+              <div class="technology-section">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Mobile</h3>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-detail">
+                      <h4 class="card-detail-title">React Native</h4>
+                      <ul class="card-list">
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Web</h3>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-detail">
+                      <h4 class="card-detail-title">React Js</h4>
+                      <h4 class="card-detail-title">Laravel</h4>
+                      <ul class="card-list">
+                        <li>HTML</li>
+                        <li>CSS3 & TailwindCSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="technology-section">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-title">Back-End</h4>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-detail">
+                      <h4 class="card-detail-title">Node Js</h4>
+                      <h4 class="card-detail-title">Laravel</h4>
+                      <ul class="card-list">
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Networking</h3>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-detail">
+                      <h4 class="card-detail-title">
+                        Cisco Switching & Routing
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Technologies and Langueges-->
+
+          <!-- Benefites -->
+          <section id="benefits">
+            <div class="title-container">
+              <h1 class="title">Benefits</h1>
+            </div>
+            <div class="benefits-main-cards" id="benefit-cards">
+              <div
+                class="benefits-card-container"
+                id="benefits-card-container-1"
+              >
+                <div class="benefits-card">
+                  <div class="benefits-card-content">
+                    <h1 class="benefits-card-title">Team Collaboration</h1>
+                    <p class="benefits-card-text">
+                      Enhance project efficiency with seamless collaboration
+                      among team members. Foster open communication, share
+                      ideas, and collectively contribute to the success of your
+                      projects. Our collaborative tools and practices empower
+                      your team to work together harmoniously, ensuring that
+                      every member is on the same page.
+                    </p>
+                  </div>
+                </div>
+                <div class="benefits-card">
+                  <div class="benefits-card-content">
+                    <h1 class="benefits-card-title">Experienced</h1>
+                    <p class="benefits-card-text">
+                      Tap into my wealth of experience to guarantee exceptional
+                      service and results. My seasoned expertise brings valuable
+                      insights to the forefront, empowering me to tackle
+                      challenges adeptly and provide top-quality solutions.
+                      Backed by a proven track record, I bring reliability and
+                      proficiency to every project, ensuring your satisfaction
+                      and success.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="benefits-card-container"
+                id="benefits-card-container-2"
+              >
+                <div class="benefits-card">
+                  <div class="benefits-card-content">
+                    <h1 class="benefits-card-title">Time Management</h1>
+                    <p class="benefits-card-text">
+                      Enhance your schedule and boost productivity with my
+                      expertise in effective time management solutions. My tools
+                      and strategies are crafted to help you prioritize tasks,
+                      set realistic goals, and stay organized, enabling you to
+                      maximize your time effectively. Elevate efficiency, meet
+                      deadlines, and accomplish your goals by leveraging my
+                      tailored solutions for optimal time management.
+                    </p>
+                  </div>
+                </div>
+                <div class="benefits-card">
+                  <div class="benefits-card-content">
+                    <h1 class="benefits-card-title">Uniqueness</h1>
+                    <p class="benefits-card-text">
+                      Explore additional benefits tailored to meet your unique
+                      requirements. My commitment to providing personalized
+                      solutions means that I go above and beyond to address your
+                      specific needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End of Benefits-->
+
+          <!-- Github -->
+          <section id="github">
+            <div class="title-container">
+              <h1 class="title">Github</h1>
+            </div>
+            <div class="github-contents">
+              <div class="github-profile">
+                <a
+                  class="github-link"
+                  href="#"
+                  id="github-profile-icon"
+                  target="_blank"
+                >
+                  <img id="github-img" src="assets/github.png" alt="logo" />
+                </a>
+                <div class="github-details">
+                  <div class="github-details-row">
+                    <h4 class="github-details-header">Username:</h4>
+                    <span id="gitHub-username"></span>
+                  </div>
+                  <div class="github-details-row">
+                    <h4 class="github-details-header">URL:</h4>
+                    <a
+                      class="github-link"
+                      href="#"
+                      id="github-profile-link"
+                      target="_blank"
+                    >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="github-repos">
+                <h3>Public Repositories</h3>
+                <ul class="github-repos-list" id="githubReposList">
+                  <!-- Repositories will be inserted here -->
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Review Section-->
+          <section class="review" id="review">
+            <div class="title-container">
+              <h1 class="title">Reviews</h1>
+            </div>
+            <form class="review-form" id="review-form-main">
+              <div class="form-group">
+                <div class="input-name">
+                  <label for="fullName" class="label">Name</label>
+                  <span><span id="name-count">0</span>/30</span>
+                </div>
+                <input
+                  class="input"
+                  id="fullName"
+                  required
+                  placeholder="Please enter your name"
+                  type="text"
+                  pattern="^\s*\S.{0,}$"
+                  title="Name must contain at least two non-whitespace characters"
+                />
+              </div>
+              <div class="form-group-message">
+                <div class="input-name">
+                  <label for="message" class="label">Message</label>
+                  <span><span id="message-count">0</span>/100</span>
+                </div>
+                <textarea
+                  class="textarea"
+                  id="message"
+                  placeholder="Kindly leave a review"
+                  required
+                  pattern="^\S"
+                  title="Message must start with a non-whitespace character"
+                ></textarea>
+              </div>
+              <div class="form-group" id="form-group-btn">
+                <button class="review-button" type="submit" id="review-btn">
+                  Submit
+                </button>
+              </div>
+            </form>
+            <div class="title-container">
+              <h1 class="title">User Reviews</h1>
+            </div>
+            <div class="review-cards">
+              <!-- Review cards -->
+              <!-- Reviews will be dynamically loaded here -->
+              <div class="review-card"></div>
+            </div>
+          </section>
+        </div>
+        <!-- End of Review -->
+
+        <!-- Footer -->
+        <div class="footer bg-dark">
+          <footer>
+            <div class="footer-section" id="socials">
+              <img id="profile-img" src="assets/courage.jpg" alt="profile" />
+              <div id="social-links">
+                <a
+                  class="social-link"
+                  href="https://web.facebook.com/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/facebook.png"
+                    alt="Facebook logo"
+                    class="social-img"
+                  />
+                </a>
+                <a
+                  class="social-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/linkedin.png"
+                    alt="LinkedIn logo"
+                    class="social-img"
+                  />
+                </a>
+                <a
+                  class="social-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/instagram.png"
+                    alt="Instagram logo"
+                    class="social-img"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="footer-section" id="info">
+              <div class="footer-column">
+                <h1 class="footer-title">Contact Info</h1>
+                <ul class="contact-list">
+                  <li class="contact-item">
+                    <span class="icon"
+                      ><i data-lucide="mail" class="contact-icons"></i
+                    ></span>
+                    <div class="contact-text">
+                      regina.kapoko@cs.unza.zm
+                      <br />
+                      reginakapoko@gmail.com
+                    </div>
+                  </li>
+                  <li class="contact-item">
+                    <span class="icon"
+                      ><i data-lucide="phone-call" class="contact-icons"></i
+                    ></span>
+                    <div class="contact-text">
+                      0973805200
+                      <br />
+                      0957539785
+                    </div>
+                  </li>
+                  <li class="contact-item">
+                    <span class="icon"
+                      ><i data-lucide="map-pin" class="contact-icons"></i
+                    ></span>
+                    <div class="contact-text">Lusaka, Zambia</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h1 class="footer-title">Services</h1>
+                <ul class="service-list">
+                  <li class="service-item">
+                    <span>
+                      <i data-lucide="send-horizontal" class="service-icon"></i>
+                    </span>
+                    <a onclick="scrollToDiv(0)">Web Development </a>
+                  </li>
+                  <li class="service-item">
+                    <span>
+                      <i data-lucide="send-horizontal" class="service-icon"></i>
+                    </span>
+                    <a onclick="scrollToDiv(1)">Mobile Development</a>
+                  </li>
+                  <li class="service-item">
+                    <span>
+                      <i data-lucide="send-horizontal" class="service-icon"></i>
+                    </span>
+                    <a onclick="scrollToDiv(2)">Networking</a>
+                  </li>
+                  <li class="service-item">
+                    <span>
+                      <i data-lucide="send-horizontal" class="service-icon"></i>
+                    </span>
+                    <a onclick="scrollToDiv(3)">IT Support</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h1 class="footer-title">Get In Touch</h1>
+                <p class="footer-text">
+                  If you're prepared to elevate your online presence, I'd love
+                  to hear from you! Feel free to use the provided links to get
+                  in touch with me.
+                </p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- End of footer -->
+
+    <!-- Include Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <script>
+      lucide.createIcons();
+
+      // function to scroll page to ref divs
+      function scrollToDiv(prop) {
+        if (prop == 0) {
+          const ref = document.getElementById("web-development");
+          // Scroll the window to the position of the div
+          ref.scrollIntoView({
+            behavior: "instant", // Use smooth scrolling
+            block: "start",
+          });
+        } else if (prop == 1) {
+          const ref = document.getElementById("mobile-development");
+          ref.scrollIntoView({
+            behavior: "instant",
+            block: "start",
+          });
+        } else if (prop == 2) {
+          const ref = document.getElementById("networking");
+          ref.scrollIntoView({
+            behavior: "instant",
+            block: "start",
+          });
+        } else if (prop == 3) {
+          const ref = document.getElementById("it-support");
+          ref.scrollIntoView({
+            behavior: "instant",
+            block: "start",
+          });
+        } else if (prop == 4) {
+          const ref = document.getElementById("overview");
+          ref.scrollIntoView({
+            behavior: "instant",
+            block: "start",
+          });
+        } else if (prop == 5) {
+          const ref = document.getElementById("skills");
+          ref.scrollIntoView({
+            behavior: "instant",
+            block: "start",
+          });
+        } else if (prop == 6) {
+          const ref = document.getElementById("benefits");
+          ref.scrollIntoView({
+            behavior: "instant",
+            block: "start",
+          });
+        } else if (prop == 7) {
+          const ref = document.getElementById("github");
+          ref.scrollIntoView({
+            behavior: "instant",
+            block: "start",
+          });
+        } else {
+          const ref = document.getElementById("socials");
+          ref.scrollIntoView({
+            behavior: "instant",
+            block: "start",
+          });
+        }
+      }
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
